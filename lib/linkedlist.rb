@@ -88,8 +88,18 @@ class LinkedList
       end
       current_node = current_node.next_node
     end
-
+    return false
   end
   
+  def pop
+    current_node = @head
+    while current_node.next_node.next_node != nil
+      current_node = current_node.next_node
+    end
+    return_me = current_node.next_node
+    current_node.next_node=nil
+    return return_me.data
+  end
+    
   
 end
