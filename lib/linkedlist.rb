@@ -36,7 +36,7 @@ class LinkedList
     count = 0
     current_node = @head
     until current_node.nil?
-      count = count + 1
+      count +=1
       current_node = current_node.next_node
     end
     count
@@ -69,7 +69,7 @@ class LinkedList
     count = 0
     current_node = @head
     until count == position
-      count = count + 1
+      count +=1
       current_node = current_node.next_node
     end
     string = []
