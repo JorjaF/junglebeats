@@ -56,7 +56,7 @@ class LinkedList
     count = 1
     current_node = @head
     until count == position
-      count = count + 1
+      count +=1
       current_node = current_node.next_node
     end
 
