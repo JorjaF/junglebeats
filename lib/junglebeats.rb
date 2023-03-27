@@ -7,8 +7,7 @@ class JungleBeats
   end
 
   def append(data)
-    beats=data.split(" ")
-    beats.each do |beat|
+    data.split(" ").each do |beat|
       list.append(beat)
     end
     data
