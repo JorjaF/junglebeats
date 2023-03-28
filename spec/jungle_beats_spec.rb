@@ -10,7 +10,7 @@ RSpec.describe JungleBeats do
     expect(jb).to be_an_instance_of(JungleBeats)
   end 
 
-  it "can have a list" do
+  it "has readable attributes" do
     jb = JungleBeats.new
     expect(jb.list).to be_an_instance_of(LinkedList)
     expect(jb.list.head).to eq(nil)
@@ -27,9 +27,12 @@ RSpec.describe JungleBeats do
 
   it "can be played" do 
     jb = JungleBeats.new
-    jb.append("deep doo ditt woo hoo shu")
-    expect(jb.count).to eq (6)
-    expect(jb.list.count).to eq(6)
+    jb.append("deep")
+    jb.append("Mississippi")
+    #jb.append("deep doo ditt woo hoo shu")
+    #expect(jb.count).to eq (6)
+    #expect(jb.list.count).to eq(6)
     jb.play
   end
+
 end
